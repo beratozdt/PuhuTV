@@ -101,7 +101,7 @@ export default function IndexPage() {
         <>
           <Container>
             <Subtitle>{typeItem}</Subtitle>
-            <List sortType={sortType} items={contents.filter((contentItem, index) => contentTypesDetail[index] === typeItem)}></List>
+            <List key={typeItem} sortType={sortType} items={contents.filter((contentItem, index) => contentTypesDetail[index] === typeItem)}></List>
           </Container>
         </>
       ))}
